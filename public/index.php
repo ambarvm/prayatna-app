@@ -3,20 +3,24 @@
 <html lang="en">
 
 <head>
-    <?php include('../components/common-head.php') ?>
-    <link rel="stylesheet" href="./css/index.css">
+	<?php include('../components/common-head.php') ?>
+	<link rel="stylesheet" href="./css/index.css">
 
-    <title>Prayatna App</title>
+	<title>Prayatna App</title>
 </head>
 
 <body>
-    <main>
-        <h1>🏏Prayatna App</h1>
-    </main>
+	<?php include('../components/navbar.php') ?>
 
-    <!-- Scripts -->
-    <?php include('../components/common-scripts.php') ?>
-    <script src="./js/index.js"></script>
+	<main>
+		<h1>🏏Prayatna App</h1>
+	</main>
+
+	<?php include('../components/footer.php') ?>
+
+	<!-- Scripts -->
+	<?php include('../components/common-scripts.php') ?>
+	<script src="./js/index.js"></script>
 </body>
 
 </html>
