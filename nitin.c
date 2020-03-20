@@ -6,5 +6,6 @@ int main()
 	printf("%d",a);
 	printf("Hello world!");
 	printf("Hello buddy.");
+printf("Hello me");
 }
 
