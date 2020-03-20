@@ -5,5 +5,6 @@ int main()
 	scanf("%d",&a);
 	printf("%d",a);
 	printf("Hello world!");
+	printf("Hello buddy.");
 }
 
