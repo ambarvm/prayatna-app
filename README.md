@@ -2,7 +2,7 @@
 
 This is a live score PWA for Prayatna.
 
-# Getting Started
+## Getting Started
 
 1.  Install PHP
     For Windows using [chocolatey](https://chocolatey.org/install)
@@ -23,6 +23,7 @@ This is a live score PWA for Prayatna.
     cd public
     php -S localhost:80
     ```
+3.  Install the editorconfig extension if you are using VS Code, Atom or one of [these](https://editorconfig.org/#download).
 
 > Note: PHP is only used for combining components using include.
 
