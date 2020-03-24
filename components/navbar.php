@@ -7,11 +7,6 @@
         </div>
      </div>
 </nav>
-
-
-
-
-
 <ul class="sidenav sidenav-fixed" id="slide_out">
    <li><div class="user-view">
           <div class="background">
