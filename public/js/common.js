@@ -19,14 +19,19 @@ function topFunction() {
 	document.documentElement.scrollTop = 0;
 }
 
- $(document).ready(function(){
-    $('select').formSelect();
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
   });
-$(document).ready(function(){
-    $('.datepicker').datepicker();
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
   });
-$(document).ready(function(){
-    $('.timepicker').timepicker();
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.timepicker');
+    var instances = M.Timepicker.init(elems, options);
   });
 
 document.getElementById("player1").style.display="none";
