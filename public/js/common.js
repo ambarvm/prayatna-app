@@ -1,3 +1,6 @@
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 M.AutoInit();
 
 const scrollButton = document.getElementById('scroll-button');
