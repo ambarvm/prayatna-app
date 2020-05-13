@@ -8,7 +8,6 @@ p=document.getElementById("time").value;
 q=document.getElementById("sport-select").value;
 m=document.getElementById("player1").value;
 n=document.getElementById("player2").value;
-}
 let db=firebase.firestore();
 db.collection("events").add({
     team1:x,
@@ -25,3 +24,5 @@ db.collection("events").add({
 .catch(function(error) {
     console.error("Error adding document: ", error);
 });
+}
+
