@@ -13,7 +13,7 @@
 	<?php include('../components/navbar.php') ?>
 
 	<main>
-		<h1>🏏Prayatna App</h1>
+		<h1 class="center">🏏Prayatna App</h1>
 	</main>
 
 	<?php include('../components/footer.php') ?>
