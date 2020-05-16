@@ -1,20 +1,18 @@
 M.AutoInit();
 
-var mybutton = document.getElementById('myBtn');
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
-window.onscroll = function() {
-	scrollFunction();
-};
+const scrollButton = document.getElementById('scroll-button');
 
-function scrollFunction() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		mybutton.style.display = 'block';
+window.addEventListener('scroll', () => {
+	if (window.scrollY > 20) {
+		scrollButton.style.display = 'block';
 	} else {
-		mybutton.style.display = 'none';
+		scrollButton.style.display = 'none';
 	}
-}
+});
 
-function topFunction() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
+function scrollToTop() {
+	window.scroll({ top: 0, behavior: 'smooth' });
 }
