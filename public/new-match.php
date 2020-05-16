@@ -13,7 +13,7 @@
 	<?php include('../components/navbar.php') ?>
 
 	<main>
-		<form class="col s12 container new-match-form">
+		<form class="col s12 container new-match-form" id="form">
 
 			<div class="row team-input">
 				<label>Team 1</label>
