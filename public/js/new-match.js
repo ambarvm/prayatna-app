@@ -28,11 +28,19 @@ function addEvent() {
 		})
 		.then(function (docRef) {
 			console.log('Document written with ID: ', docRef.id);
-			M.toast({html: 'Form is submitted', classes: 'rounded', displayLength: 1000});
-			document.getElementById("form").reset();
+			M.toast({
+				html: 'Form is submitted',
+				classes: 'rounded',
+				displayLength: 1000,
+			});
+			document.getElementById('form').reset();
 		})
 		.catch(function (error) {
 			console.error('Error adding document: ', error);
-			M.toast({html: 'Network error!', classes: 'rounded'});
+			M.toast({
+				html: 'Something Went Wrong',
+				classes: 'rounded',
+				displayLength: 1000,
+			});
 		});
 }
