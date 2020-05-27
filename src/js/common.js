@@ -1,3 +1,5 @@
+import firebaseConfig from '../../firebase.config';
+
 M.AutoInit();
 
 // Initialize Firebase

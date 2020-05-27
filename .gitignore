@@ -2,4 +2,4 @@
 .vscode/
 dist/
 node_modules/
-firebase.config.html
+firebase.config.js
