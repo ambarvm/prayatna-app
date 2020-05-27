@@ -1,0 +1,56 @@
+.follow {
+	padding-top: 7px;
+	padding-bottom: 6px;
+}
+
+#scroll-button {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 50%;
+}
+#scroll-button:hover {
+	background-color: black;
+	color: white;
+}
+
+header,
+main,
+footer {
+	padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+	header,
+	main,
+	footer {
+		padding-left: 0;
+	}
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.modal {
+	border-radius: 10px;
+}
+.center-block {
+	display: block;
+	margin: auto;
+}

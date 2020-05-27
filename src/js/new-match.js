@@ -3,8 +3,9 @@ const db = firebase.firestore();
 const playerNamesElement = document.querySelector('#player-names');
 let includePlayerNames = false;
 
-function onSportChange({ value: selectedSport }) {
+function onSportChange(event) {
 	const individualSports = ['badminton', 'chess', 'table tennis'];
+	const selectedSport = event.target.value;
 
 	if (individualSports.includes(selectedSport)) {
 		playerNamesElement.style.display = 'block';
@@ -23,8 +24,12 @@ function addEvent() {
 			date: document.getElementById('date').value,
 			time: document.getElementById('time').value,
 			sport: document.getElementById('sport-select').value,
-			player1: includePlayerNames ? document.getElementById('player1').value : null,
-			player2: includePlayerNames ? document.getElementById('player2').value : null,
+			player1: includePlayerNames
+				? document.getElementById('player1').value
+				: null,
+			player2: includePlayerNames
+				? document.getElementById('player2').value
+				: null,
 		})
 		.then(function (docRef) {
 			console.log('Document written with ID: ', docRef.id);
@@ -44,3 +49,8 @@ function addEvent() {
 			});
 		});
 }
+
+document.querySelector('#submit-btn').addEventListener('click', addEvent);
+document
+	.querySelector('#sport-select')
+	.addEventListener('change', onSportChange);

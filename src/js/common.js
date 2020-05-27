@@ -16,3 +16,5 @@ window.addEventListener('scroll', () => {
 function scrollToTop() {
 	window.scroll({ top: 0, behavior: 'smooth' });
 }
+
+scrollButton.addEventListener('click', scrollToTop);

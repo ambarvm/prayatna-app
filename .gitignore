@@ -1,2 +1,5 @@
+.cache/
 .vscode/
-firebase.config.php
+dist/
+node_modules/
+firebase.config.html
