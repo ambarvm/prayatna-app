@@ -54,3 +54,7 @@ main {
 	display: block;
 	margin: auto;
 }
+.btn,
+.btn-flat {
+	border-radius: 4px;
+}
