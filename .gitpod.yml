@@ -1,0 +1,12 @@
+image: gitpod/workspace-full
+
+# List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 1234
+    onOpen: open-preview
+
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - name: Start
+    init: npm ci # runs during prebuild
+    command: npm start
