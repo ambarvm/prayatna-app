@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login page</title>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+	<include src="src/components/common-head.html"></include>
+    <link type="text/css" rel="stylesheet" href="../css/login.css"/>
+</head>
+<body>
+<include src="src/components/navbar.html"></include>
+    
+<div class="row login">
+        <div class="col s12 center">
+          <div class="input-field inline">
+            <input id="email_inline" type="email" size="50" class="validate">
+            <label for="email_inline">Email</label>
+          </div>
+        </div>
+      </div>
+
+<div class="row login1">
+        <div class="col s12 center">
+	 <div class="input-field inline">
+          <input id="password" type="password" size="50" class="validate">
+          <label for="password">Password</label>
+	</div>
+        </div>
+      </div>
+<div class="center login1">
+<button class="waves-effect waves-light btn" id="quickstart-sign-in">Sign in</button>
+</div>
+<br>
+<p style="visibility:hidden;" id="login2"></p>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+
+    <include src="src/components/footer.html"></include>
+	<include src="src/components/common-scripts.html"></include>
+    <script src="../js/login.js"></script>
+    
+</body>
+</html>
